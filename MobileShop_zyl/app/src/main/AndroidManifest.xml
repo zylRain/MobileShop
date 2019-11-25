@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobileshop_zyl">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:name="com.example.mobileshop_zyl.common.MobileShopApp"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/shop"
+        android:label="@string/app_name"
+
+        android:roundIcon="@mipmap/shop"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.mobileshop_zyl.activity.AdActivity"/>
+        <activity android:name="com.example.mobileshop_zyl.activity.MainActivity"/>
+        <activity android:name="com.example.mobileshop_zyl.activity.LoginActivity"/>
+
+        <activity android:name="com.example.mobileshop_zyl.activity.MyOrderActivity"/>
+        <activity android:name="com.example.mobileshop_zyl.activity.MyCollectActivity"/>
+        <activity android:name="com.example.mobileshop_zyl.activity.MyAddressActivity"/>
+        <activity android:name="com.example.mobileshop_zyl.activity.ChangePwdActivity"/>
+
+        <activity android:name="com.example.mobileshop_zyl.activity.GoodsListActivity"/>
+        <activity android:name="com.example.mobileshop_zyl.activity.GoodsDetailActivity"/>
+    </application>
+
+</manifest>
